@@ -7,7 +7,7 @@
     "build": "yarn build",
     "lint": "yarn lint",
     "start": "node server.js",
-    "heroku-postbuild": "yarn add --only=dev --no-shrinkwrap && yarn run build"
+    "heroku-postbuild": "yarn run build"
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
