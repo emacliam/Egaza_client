@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "serve": "yarn serve",
+    "build": "yarn build",
+    "lint": "yarn lint",
     "start": "node server.js",
-    "postinstall": "npm run build",
-    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
+    "heroku-postbuild": "yarn add --only=dev --no-shrinkwrap && yarn run build"
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
