@@ -51,6 +51,7 @@
     "vue-template-compiler": "^2.6.11"
   },
   "engines": {
-    "node": "15.x"
+    "node": "15.x",
+    "yarn": "0.28.4"
   }
 }
