@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
   publish="dist"
-  base = "client"
+  base = "egaza_client"
   # The base directory should be the path to the nested Vue project
 [[redirects]]
   from = "/*"
