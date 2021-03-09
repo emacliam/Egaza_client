@@ -43,9 +43,15 @@ export default {
         localStorage.setItem('userStatus', response.data.userStatus);
         this.$store.commit('setUserStatus', response.data.userStatus);
 
-        setTimeout(() => {
+        setTimeout(async () => {
           this.loading = false;
-          this.$router.push({ path: '/dashboard' });
+          localStorage.clear();
+          const logout = await axios.get('/api/auth/logout');
+          if (logout.data.success) {
+            console.log('logging out');
+            this.$router.push({ path: '/login' });
+            this.$toasted.success('Account Verified').goAway(2000);
+          }
         }, 5000);
       }
     },

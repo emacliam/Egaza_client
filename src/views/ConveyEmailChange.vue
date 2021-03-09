@@ -91,16 +91,21 @@ export default {
           .get(
             `/api/auth/verification/change_email/${this.$route.params.id}/${this.$route.params.code}/${this.$route.params.email}`
           )
-          .then((res) => {
+          .then(async (res) => {
             if (res.data.success) {
               console.log(res);
               this.changeemailloading = false;
-              this.$router.replace({
-                path: '/login',
-                query: {
-                  redirect: this.$router.currentRoute.fullPath,
-                },
-              });
+              localStorage.clear();
+              const logout = await axios.get('/api/auth/logout');
+              if (logout.data.success) {
+                console.log('logging out');
+                this.$router.replace({
+                  path: '/login',
+                  query: {
+                    redirect: this.$router.currentRoute.fullPath,
+                  },
+                });
+              }
             } else {
               this.changeemailloading = false;
               this.errors = null;

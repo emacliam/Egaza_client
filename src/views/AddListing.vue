@@ -82,7 +82,7 @@
                   placeholder="0.00"
                 />
                 <div class="absolute inset-y-0 right-0 flex items-center">
-                  <label for="currency" class="sr-only">Currency</label>
+                  <label for="currency" class="mx-4">Currency</label>
                   <select
                     id="currency"
                     name="currency"
@@ -148,7 +148,7 @@
                 name="description"
                 v-model="description"
                 placeholder="description"
-                class="appearance-none bg-gray-50 focus:bg-whiterelative block w-full px-3 py-2 border-b border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                class="appearance-none bg-gray-50 focus:bg-white relative block w-full px-3 py-2 border-b border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                 required
                 id=""
                 cols="30"
