@@ -1,5 +1,5 @@
 module.exports = {
-  outputDir: '/home/panashe/Documents/Login/EGAZA/server/public',
+  outputDir: 'dist',
   devServer: {
     //remove it later used it with ngrok
     disableHostCheck: true,
