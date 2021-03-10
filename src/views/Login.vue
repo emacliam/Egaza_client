@@ -158,6 +158,7 @@
 </template>
 
 <script>
+import router from '@/router/index';
 import { mapActions } from 'vuex';
 export default {
   name: 'Login',

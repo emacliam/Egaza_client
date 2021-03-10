@@ -208,6 +208,7 @@
 
 <script>
 import { mapActions } from 'vuex';
+import router from '@/router/index';
 export default {
   name: 'Register',
   methods: {
