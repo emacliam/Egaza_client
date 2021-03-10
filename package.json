@@ -47,6 +47,6 @@
     "vue-template-compiler": "^2.6.11"
   },
   "engines": {
-    "node": "15.x"
+    "node": "12.18.0"
   }
 }
